@@ -1,0 +1,28 @@
+1) First we need to install the EKSCTL:
+    curl --silent --location "https://github.com/weaveworks/eksctl/releases/latest/download/eksctl_$(uname -s)_amd64.tar.gz" | tar xz -C /tmp
+
+Move the extracted binary to /usr/local/bin.# Anyuser can access if we it to localbin
+sudo mv /tmp/eksctl /usr/local/bin
+
+
+
+Test that your installation was successful with the following command. You must have eksctl 0.34.0 version or later.
+eksctl version 
+
+
+2) Kubectl:
+-----------------
+We need to install kubectl from the kubernetes documentation
+
+
+curl -O https://s3.us-west-2.amazonaws.com/amazon-eks/1.30.0/2024-05-12/bin/linux/amd64/kubectl
+
+
+we need to givwe execute permission:
+chmod +x ./kubectl
+
+sudo mv kubectl /usr/local/bin/
+
+3) now create the EKS.yaml file 
+	
+    
