@@ -1,6 +1,7 @@
 apiVersion: v1
 kind: Pod
 metadata:
+  namespace: expense
   name: nginx
   labels:
     app.kubernetes.io/name: nginx_app
