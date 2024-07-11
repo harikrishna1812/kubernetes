@@ -7,7 +7,7 @@ spec:
   selector:
     app.kubernetes.io/name: nginx_app
   ports:
-  - name: NodePort
+  - name: Nodeport
     protocol: TCP
     port: 80
     targetPort: 80
