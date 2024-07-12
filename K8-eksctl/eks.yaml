@@ -12,4 +12,6 @@ managedNodeGroups:
     spot: true
 #https://github.com/eksctl-io/eksctl/blob/main/examples/01-simple-cluster.yaml
 
+#eksctl delete cluster --name
+
 
